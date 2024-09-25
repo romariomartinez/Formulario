@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Incripciones</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h1 class="display-4 text-dark">Formulario De Incripcionesgit init</h1>
+            <p class="lead text-muted">Administra tu información de manera rápida y sencilla.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-cogs"></i> Menú de Opciones
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-around flex-wrap mb-4">
+                            <button class="btn btn-primary btn-custom mb-2" onclick="mostrarFormulario('registrar')">
+                                <i class="fas fa-user-plus"></i> Registrar
+                            </button>
+                            <button class="btn btn-danger btn-custom mb-2" onclick="mostrarFormulario('eliminar')">
+                                <i class="fas fa-user-minus"></i> Eliminar
+                            </button>
+                            <button class="btn btn-warning btn-custom mb-2" onclick="mostrarFormulario('actualizar')">
+                                <i class="fas fa-user-edit"></i> Actualizar
+                            </button>
+                            <button class="btn btn-info btn-custom mb-2" onclick="mostrarFormulario('consultar')">
+                                <i class="fas fa-search"></i> Consultar
+                            </button>
+                        </div>
+                        <div id="formulario" class="formulario"></div>
+                        <div id="resultadoConsulta" class="resultado-consulta mt-4 d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
